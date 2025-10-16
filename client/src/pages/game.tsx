@@ -226,24 +226,26 @@ export default function Game() {
             {currentQuestion.question}
           </h2>
           
-          <Input
-            type="text"
-            value={currentAnswer}
-            onChange={(e) => setCurrentAnswer(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" && canProceed) {
-                if (isLastQuestion) {
-                  handleSubmitGame();
-                } else {
-                  handleNextQuestion();
-                }
-              }
-            }}
-            placeholder="Type your answer..."
-            className="h-12 text-base"
-            autoFocus
-            data-testid="input-answer"
-          />
+          <div className="space-y-3">
+            <Button
+              variant={currentAnswer === "Manchester City" ? "default" : "outline"}
+              size="lg"
+              className="w-full h-12 text-base font-semibold"
+              onClick={() => setCurrentAnswer("Manchester City")}
+              data-testid="button-choice-mancity"
+            >
+              Manchester City
+            </Button>
+            <Button
+              variant={currentAnswer === "Liverpool" ? "default" : "outline"}
+              size="lg"
+              className="w-full h-12 text-base font-semibold"
+              onClick={() => setCurrentAnswer("Liverpool")}
+              data-testid="button-choice-liverpool"
+            >
+              Liverpool
+            </Button>
+          </div>
         </Card>
 
         {isLastQuestion ? (

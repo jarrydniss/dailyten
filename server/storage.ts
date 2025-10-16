@@ -12,33 +12,33 @@ export class MemStorage implements IStorage {
     this.questions = [
       {
         id: 1,
-        question: "What is the capital of France?",
-        correctAnswer: "Paris",
+        question: "Who won the Premier League in 2017–18?",
+        correctAnswer: "Manchester City",
       },
       {
         id: 2,
-        question: "What is the largest planet in our solar system?",
-        correctAnswer: "Jupiter",
+        question: "Who won the Premier League in 2018–19?",
+        correctAnswer: "Manchester City",
       },
       {
         id: 3,
-        question: "Who painted the Mona Lisa?",
-        correctAnswer: "Leonardo da Vinci",
+        question: "Who won the Premier League in 2020–21?",
+        correctAnswer: "Manchester City",
       },
       {
         id: 4,
-        question: "What is the chemical symbol for gold?",
-        correctAnswer: "Au",
+        question: "Who won the Premier League in 2021–22?",
+        correctAnswer: "Manchester City",
       },
       {
         id: 5,
-        question: "In what year did World War II end?",
-        correctAnswer: "1945",
+        question: "Who won the Premier League in 2022–23?",
+        correctAnswer: "Manchester City",
       },
       {
         id: 6,
-        question: "What is the smallest prime number?",
-        correctAnswer: "2",
+        question: "Who won the Premier League in 2023–24?",
+        correctAnswer: "Manchester City",
       },
     ];
   }
