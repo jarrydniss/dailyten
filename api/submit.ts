@@ -1,6 +1,6 @@
 // api/submit.ts
 // Minimal Vercel serverless function exposing POST /api/submit
-import { storage } from "./storage";
+import { storage } from "./storage.js";
 
 export default async function handler(req: any, res: any) {
   if (req.method !== "POST") {
