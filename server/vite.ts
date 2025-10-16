@@ -68,6 +68,9 @@ export async function setupVite(app: Express, server: Server) {
 }
 
 export function serveStatic(app: Express) {
+  console.log("import.meta.dirname:", import.meta.dirname);
+  console.log("distPath:", distPath);
+  console.log("index.html exists?", fs.existsSync(path.join(distPath, "index.html")));
   const distPath = path.resolve(import.meta.dirname, "../../dist/public");
 
   if (!fs.existsSync(distPath)) {
