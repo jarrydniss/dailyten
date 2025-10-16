@@ -5,7 +5,7 @@ import { setupVite, serveStatic, log } from "./vite";
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
+console.log("App environment:", app.get("env"));
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
