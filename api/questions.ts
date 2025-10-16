@@ -1,6 +1,6 @@
 // api/questions.ts
 // Minimal Vercel serverless function exposing GET /api/questions
-import { storage } from "../api/storage";
+import { storage } from "./storage";
 
 export default async function handler(req: any, res: any) {
   if (req.method !== "GET") {
